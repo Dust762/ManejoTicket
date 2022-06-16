@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ManejoTicketWEB.Tecnico
+namespace ManejoTicketWEB.TecnicoWeb
 {
 
 
-    public partial class consultarComentario
+    public partial class cambiarEstadoTicket
     {
     }
 }
