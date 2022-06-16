@@ -41,11 +41,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\CategoriaDAL.cs" />
+    <Compile Include="DAL\ICategoriaDAL.cs" />
+    <Compile Include="DAL\IMensajeDAL.cs" />
+    <Compile Include="DAL\ITecnicoDAL.cs" />
+    <Compile Include="DAL\ITicketDAL.cs" />
+    <Compile Include="DAL\IUsuarioDAL.cs" />
+    <Compile Include="DAL\MensajeDAL.cs" />
+    <Compile Include="DAL\TecnicoDAL.cs" />
+    <Compile Include="DAL\TicketDAL.cs" />
+    <Compile Include="DAL\UsuarioDAL.cs" />
+    <Compile Include="DTO\Categoria.cs" />
+    <Compile Include="DTO\Mensaje.cs" />
+    <Compile Include="DTO\Persona.cs" />
+    <Compile Include="DTO\TecnicoModel.cs" />
+    <Compile Include="DTO\Ticket.cs" />
+    <Compile Include="DTO\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

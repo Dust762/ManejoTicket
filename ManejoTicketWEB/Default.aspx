@@ -10,6 +10,6 @@
 <body>
     <a href="Supervisor/inicioSup.aspx">Inicio Supervisor</a>
     <a href="Usuario/inicioUsu.aspx">Inicio Usuario</a>
-    <a href="Tecnico/inicioTec.aspx">Inicio tecnico</a>
+    <a href="TecnicoWeb/inicioTec.aspx">Inicio tecnico</a>
 </body>
 </html>

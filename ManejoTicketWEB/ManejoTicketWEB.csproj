@@ -67,10 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tecnico\cambiarEstadoTicket.aspx" />
-    <Content Include="Tecnico\consultarComentario.aspx" />
-    <Content Include="Tecnico\consultarTicket.aspx" />
-    <Content Include="Tecnico\inicioTec.aspx" />
+    <Content Include="TecnicoWeb\cambiarEstadoTicket.aspx" />
+    <Content Include="TecnicoWeb\consultarComentario.aspx" />
+    <Content Include="TecnicoWeb\consultarTicket.aspx" />
+    <Content Include="TecnicoWeb\inicioTec.aspx" />
     <Content Include="Usuario\cerrarTicket.aspx" />
     <Content Include="Usuario\consultarTicket.aspx" />
     <Content Include="Usuario\crearTicket.aspx" />
@@ -89,33 +89,40 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tecnico\cambiarEstadoTicket.aspx.cs">
+    <Compile Include="TecnicoWeb\cambiarEstadoTicket.aspx.cs">
       <DependentUpon>cambiarEstadoTicket.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Tecnico\cambiarEstadoTicket.aspx.designer.cs">
+    <Compile Include="TecnicoWeb\cambiarEstadoTicket.aspx.designer.cs">
       <DependentUpon>cambiarEstadoTicket.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tecnico\consultarComentario.aspx.cs">
+    <Compile Include="TecnicoWeb\consultarComentario.aspx.cs">
       <DependentUpon>consultarComentario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Tecnico\consultarComentario.aspx.designer.cs">
+    <Compile Include="TecnicoWeb\consultarComentario.aspx.designer.cs">
       <DependentUpon>consultarComentario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tecnico\consultarTicket.aspx.cs">
+    <Compile Include="TecnicoWeb\consultarTicket.aspx.cs">
       <DependentUpon>consultarTicket.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Tecnico\consultarTicket.aspx.designer.cs">
+    <Compile Include="TecnicoWeb\consultarTicket.aspx.designer.cs">
       <DependentUpon>consultarTicket.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tecnico\inicioTec.aspx.cs">
+    <Compile Include="TecnicoWeb\inicioTec.aspx.cs">
       <DependentUpon>inicioTec.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Tecnico\inicioTec.aspx.designer.cs">
+    <Compile Include="TecnicoWeb\inicioTec.aspx.designer.cs">
       <DependentUpon>inicioTec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TecnicoWeb\pagTecPrincipal.Master.cs">
+      <DependentUpon>pagTecPrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TecnicoWeb\pagTecPrincipal.Master.designer.cs">
+      <DependentUpon>pagTecPrincipal.Master</DependentUpon>
     </Compile>
     <Compile Include="Usuario\cerrarTicket.aspx.cs">
       <DependentUpon>cerrarTicket.aspx</DependentUpon>
@@ -230,13 +237,6 @@
     <Compile Include="Supervisor\responderMensaje.aspx.designer.cs">
       <DependentUpon>responderMensaje.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tecnico\pagPrincipalTecnico.Master.cs">
-      <DependentUpon>pagPrincipalTecnico.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Tecnico\pagPrincipalTecnico.Master.designer.cs">
-      <DependentUpon>pagPrincipalTecnico.Master</DependentUpon>
-    </Compile>
     <Compile Include="Usuario\verMensajes.aspx.cs">
       <DependentUpon>verMensajes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -249,13 +249,19 @@
     <Content Include="Supervisor\pagPrincipalSupervisor.Master" />
     <Content Include="Usuario\pagPrincipalUsuario.Master" />
     <None Include="packages.config" />
-    <Content Include="Tecnico\pagPrincipalTecnico.Master" />
+    <Content Include="TecnicoWeb\pagTecPrincipal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManejoTicketModelo\ManejoTicketModelo.csproj">
+      <Project>{f3378157-9494-42a8-81e4-2105cf073eb1}</Project>
+      <Name>ManejoTicketModelo</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

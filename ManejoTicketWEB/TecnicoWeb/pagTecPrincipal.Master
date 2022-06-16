@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pagPrincipalTecnico.master.cs" Inherits="ManejoTicketWEB.Tecnico.pagPrincipalTecnico" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pagTecPrincipal.master.cs" Inherits="ManejoTicketWEB.TecnicoWeb.pagTecPrincipal" %>
 
 <!DOCTYPE html>
 
@@ -15,9 +15,10 @@
     <a href="consultarComentario.aspx">Consultar comentarios</a>
     <a href="inicioTec.aspx">Inicio</a>
     <a href="../Default.aspx">Inicio roles</a>
-    <form id="pagTecMaster" runat="server">
+    <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="contenidoTecnico" runat="server">
+
             </asp:ContentPlaceHolder>
         </div>
     </form>

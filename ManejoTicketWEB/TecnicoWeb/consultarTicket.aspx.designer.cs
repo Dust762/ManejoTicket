@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ManejoTicketWEB.Tecnico
+namespace ManejoTicketWEB.TecnicoWeb
 {
 
 

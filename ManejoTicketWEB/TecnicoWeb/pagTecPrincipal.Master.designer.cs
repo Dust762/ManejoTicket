@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ManejoTicketWEB.Tecnico
+namespace ManejoTicketWEB.TecnicoWeb
 {
 
 
-    public partial class pagPrincipalTecnico
+    public partial class pagTecPrincipal
     {
 
         /// <summary>
@@ -24,13 +24,13 @@ namespace ManejoTicketWEB.Tecnico
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
-        /// Control pagTecMaster.
+        /// Control form1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm pagTecMaster;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// Control contenidoTecnico.
