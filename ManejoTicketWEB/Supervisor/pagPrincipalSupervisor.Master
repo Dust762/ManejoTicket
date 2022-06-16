@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pagPrincipalSupervisor.master.cs" Inherits="ManejoTicketWEB.Cliente.pagPrincipalSupervisor" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <a href="crearTecnico.aspx">Crear Tecnico</a>
+    <a href="asignarTicket.aspx">Asignar Ticket</a>
+    <a href="responderMensaje.aspx">Responder mensaje</a>
+    <a href="modificarTicket.aspx">Modificar ticket</a>
+    <a href="crearCategoria.aspx">Crear categoria</a>
+    <a href="consultarTecnicos.aspx">Consultar tecnicos</a>
+    <a href="mostrarTickets.aspx">Mostrar tickets</a>
+    <a href="inicioSup.aspx">Inicio</a>
+    <a href="../Default.aspx">Inicio de roles</a>
+    <form id="pagSupMaster" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="contenidoSupervisor" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

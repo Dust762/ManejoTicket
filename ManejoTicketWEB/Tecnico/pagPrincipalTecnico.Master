@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pagPrincipalTecnico.master.cs" Inherits="ManejoTicketWEB.Tecnico.pagPrincipalTecnico" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <a href="consultarTicket.aspx">Consultar ticket</a>
+    <a href="cambiarEstadoTicket.aspx">Cambiar estado del ticket</a>
+    <a href="consultarComentario.aspx">Consultar comentarios</a>
+    <a href="inicioTec.aspx">Inicio</a>
+    <a href="../Default.aspx">Inicio roles</a>
+    <form id="pagTecMaster" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="contenidoTecnico" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

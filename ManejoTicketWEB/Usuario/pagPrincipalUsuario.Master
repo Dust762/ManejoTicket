@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pagPrincipalUsuario.Master.cs" Inherits="ManejoTicketWEB.Cliente.pagPrincipalCliente" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Pagina principal Usuario</title>
+    
+</head>
+<body>
+    <a href="crearTicket.aspx">Crear ticket</a>
+    <a href="consultarTicket.aspx">Consultar ticket</a>
+    <a href="cerrarTicket.aspx">Cerrar ticket</a>
+    <a href="verMensajes.aspx">Ver mensajes</a>
+    <a href="enviarMensajes.aspx">Enviar mensajes</a>
+    <a href="inicioUsu.aspx">Inicio</a>
+    <a href="../Default.aspx">Inicio de roles</a>
+    <form id="pagUsuMaster" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="contenidoUsuario" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
