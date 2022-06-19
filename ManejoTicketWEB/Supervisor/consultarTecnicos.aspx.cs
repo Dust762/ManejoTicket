@@ -17,6 +17,7 @@ namespace ManejoTicketWEB.Supervisor
             if (!IsPostBack)
             {
                 CargarGrilla();
+                
             }
         }
 
@@ -40,6 +41,27 @@ namespace ManejoTicketWEB.Supervisor
                 }
 
             }
+            else if (e.CommandName == "mostrarTickets")
+            {
+                Tecnico temporal = null;
+                int idTec = Convert.ToInt32(e.CommandArgument);
+                List<Tecnico> temp = tecnicoDAL.mostrarTecnicos();
+                //temp.FindAll(tec => tec.IdTecnico == idTec);
+                for (int i = 0; i < temp.Count; i++)
+                {
+                    if (temp[i].IdTecnico == idTec)
+                    {
+                        temporal = temp[i];
+                        break;
+                    }
+                }
+                if (temporal.mostrarTicketsAsignados().Count > 0)
+                {
+                    
+                    temporal.mostrarTicketsAsignados();
+                    
+                }
+            }
         }
         
         public void CargarGrilla()
@@ -48,8 +70,8 @@ namespace ManejoTicketWEB.Supervisor
             //3 creamos una lista igual a la del clienteDAL
             List<Tecnico> tecnicos = tecnicoDAL.mostrarTecnicos();
             // 4cargamos el listado a la grilla
-            
-            
+            this.GrillaTecnicos.DataSource = tecnicos;
+            this.GrillaTecnicos.DataBind();
             //5 recargamos la grilla con la configuración indicada
            
         }

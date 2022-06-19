@@ -28,7 +28,7 @@ namespace ManejoTicketWEB.Supervisor
                     categorias.Add(cat);
 
                     this.mensajesLbl.Text = "Creado";
-                    
+                    this.catTxt.Text = "";
                 }
                 else
                 {

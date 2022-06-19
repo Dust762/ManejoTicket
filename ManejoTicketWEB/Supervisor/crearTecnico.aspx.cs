@@ -24,10 +24,19 @@ namespace ManejoTicketWEB.Supervisor
             String apellido = this.apellidoTec.Text.Trim();
             if (validar(rut,nombre,apellido))
             {
+                List<Tecnico> temp = tecnicoDAL.mostrarTecnicos();
+                if (!tecnicoDAL.encontrarTecnico(temp,rut))
+                {
+                    String sexo = this.sexoRbl.SelectedValue;
+                    Tecnico t = new Tecnico(rut, nombre, apellido, sexo);
+                    tecnicoDAL.agregarTecnico(t);
+                    this.mensajesLbl.Text = "Tecnico creado";
+                }
+                else
+                {
+                    this.mensajesLbl.Text = "Ya existe";
+                }
                 
-                String sexo = this.sexoRbl.SelectedValue;
-                Tecnico t = new Tecnico(rut,nombre,apellido,sexo);
-                tecnicoDAL.agregarTecnico(t);
             }
             else
             {

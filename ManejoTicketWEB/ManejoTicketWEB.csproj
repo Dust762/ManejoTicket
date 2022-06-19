@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Supervisor\ticketAsignados.aspx" />
     <Content Include="TecnicoWeb\cambiarEstadoTicket.aspx" />
     <Content Include="TecnicoWeb\consultarComentario.aspx" />
     <Content Include="TecnicoWeb\consultarTicket.aspx" />
@@ -89,6 +90,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Supervisor\ticketAsignados.aspx.cs">
+      <DependentUpon>ticketAsignados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor\ticketAsignados.aspx.designer.cs">
+      <DependentUpon>ticketAsignados.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TecnicoWeb\cambiarEstadoTicket.aspx.cs">
       <DependentUpon>cambiarEstadoTicket.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

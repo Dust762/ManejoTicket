@@ -19,6 +19,12 @@ namespace ManejoTicketModelo
             categorias.Remove(c);
         }
 
+        public Categoria encontrarCat(int cod)
+        {
+            Categoria c = categorias.Find(cat => cat.CodCategoria == cod);
+            return c;
+        }
+
         public List<Categoria> mostrarCategorias()
         {
             return categorias;

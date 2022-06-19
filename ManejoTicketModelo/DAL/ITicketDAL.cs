@@ -13,5 +13,9 @@ namespace ManejoTicketModelo
 
         void eliminarTicket(Ticket t);
         void actualizarTicket(Ticket t, String cambio, string option);
+
+        bool ticketDisp(List<Ticket> tickets,int id);
+
+        Ticket selTic(List<Ticket> tickets, int id);
     }
 }

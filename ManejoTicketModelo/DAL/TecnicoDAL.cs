@@ -19,6 +19,25 @@ namespace ManejoTicketModelo
             tecnicos.Remove(t);
         }
 
+        public bool encontrarTecnico(List<Tecnico> tecnicos, string rut)
+        {
+            for (int i = 0; i < tecnicos.Count; i++)
+            {
+                if (tecnicos[i].Rut.Equals(rut))
+                {
+                    return true;
+                    
+                }
+            }
+            return false;
+        }
+
+        public string encontrarTecnicoId(List<Tecnico> tecnicos, int id)
+        {
+            Tecnico temp = tecnicos.Find(tec => tec.IdTecnico == id);
+            return temp.Nombre;
+        }
+
         public List<Tecnico> mostrarTecnicos()
         {
             return tecnicos;

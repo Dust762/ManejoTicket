@@ -95,5 +95,21 @@ namespace ManejoTicketModelo
         {
             return tickets;
         }
+
+        public bool ticketDisp(List<Ticket> tickets,int id)
+        {
+            Ticket temp = tickets.Find(tic => tic.IdTicket == id);
+            if (temp.NombreTecnico.Equals(""))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public Ticket selTic(List<Ticket> tickets, int id)
+        {
+            Ticket t = tickets.Find(tic => tic.IdTicket == id);
+            return t;
+        }
     }
 }

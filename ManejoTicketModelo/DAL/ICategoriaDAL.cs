@@ -11,5 +11,7 @@ namespace ManejoTicketModelo
         void agregarCategoria(Categoria c);
         void eliminarCategoria(Categoria c);
         List<Categoria> mostrarCategorias();
+
+        Categoria encontrarCat(int cod);
     }
 }

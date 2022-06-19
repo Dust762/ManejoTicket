@@ -5,8 +5,9 @@
    
     
     <asp:GridView runat="server" CssClass="table table-hover table-dark"
-     ID="GrillaTecnicos" AutoGenerateColumns="false" OnRowCommand="GrillaTecnicos_RowCommand" EmptyDataText="No se registran datos" ShowHeaderWhenEmpty="true">
+        ID="GrillaTecnicos" AutoGenerateColumns="false" OnRowCommand="GrillaTecnicos_RowCommand" EmptyDataText="No se registran datos" ShowHeaderWhenEmpty="true">
         <Columns>
+            <asp:BoundField DataField="idTecnico" HeaderText="ID del tecnico" />
             <asp:BoundField DataField="Rut" HeaderText="Rut del Tecnico" />
             <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
             <asp:BoundField DataField="Apellido" HeaderText="Apellido" />
@@ -20,7 +21,19 @@
                         Text="Eliminar" CommandName="eliminar" CommandArgument='<%# Eval("Rut") %>' />
                 </ItemTemplate>
             </asp:TemplateField>
+            <asp:TemplateField>
+                <ItemTemplate>
+                    <asp:Button
+                        runat="server"
+                        CssClass="btn btn-success"
+                        Text="Tickets Asignados" CommandName="mostrarTickets" CommandArgument='<%# Eval("idTecnico") %>' />
+                </ItemTemplate>
+            </asp:TemplateField>
+            
         </Columns>
 
+    </asp:GridView>
+    <asp:GridView runat="server" CssClass="table table-hover table-dark" ID="grillaTickets" AutoGenerateColumns="false"
+        EmptyDataText="No se registran datos" ShowHeaderWhenEmpty="true">
     </asp:GridView>
 </asp:Content>

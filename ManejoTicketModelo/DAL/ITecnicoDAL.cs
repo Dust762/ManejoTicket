@@ -11,5 +11,9 @@ namespace ManejoTicketModelo
         void agregarTecnico(Tecnico t);
         void eliminarTecnico(Tecnico t);
         List<Tecnico> mostrarTecnicos();
+
+        bool encontrarTecnico(List<Tecnico> tecnicos, String rut);
+
+        string encontrarTecnicoId(List<Tecnico> tecnicos, int id);
     }
 }
